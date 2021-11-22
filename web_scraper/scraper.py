@@ -20,7 +20,7 @@ def get_citations_needed_report(url):
 
 if __name__=="__main__":
     count = get_citations_needed_count('https://en.wikipedia.org/wiki/History_of_Mexico')
-    citation_report = get_citations_needed_report('https://en.wikipedia.org/wiki/History_of_Mexico')
+    citation_report = get_citations_needed_report('https://en.wikipedia.org/wiki/History_of_Mexico')[0]
 
     print(f"Citatios needed: {count} \n")
     print(citation_report)
